@@ -1,0 +1,24 @@
+{
+  "author": "",
+  "config": {
+    "unsafe-perm": true
+  },
+  "dependencies": {
+    "serialport": "*"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "license": "ISC",
+  "main": "collect-2jciebu-usb.js",
+  "name": "node-red-contrib-collect-2jciebu-usb",
+  "node-red": {
+    "nodes": {
+      "2jciebl01": "collect-2jciebu-usb.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.1"
+}

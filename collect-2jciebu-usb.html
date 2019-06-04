@@ -1,0 +1,39 @@
+<script type="text/x-red" data-template-name="2jciebuusb">
+  <div class="form-row">
+    <label for="node-input-serialport" style="width: 60%;"><i class="fa fa-wrench"></i>serialport</label>
+    <input type="text" id="node-input-serialport" />
+  </div>
+  <div class="form-row">
+    <label for="node-input-topic" style="width: 60%;"><i class="fa fa-tasks"></i>topic</label>
+    <input type="text" id="node-input-topic" />
+  </div>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('2jciebuusb',{
+        category: 'input',
+        color: '#e5e5e5',
+        defaults: {
+		serialport: { value: "/dev/ttyUSB0",required: true },
+		topic: { value: "2JCIE-BU", required:false }
+        },
+        inputs:1,
+        outputs:1,
+        icon: 'icons8-proximity-sensor-50.png',
+        label: function() {
+            return this.name||"2jciebuusb";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="2jciebuusb">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="2jciebuusb">
+    <p>A simple node that converts the message payloads into all lower-case characters</p>
+</script>
+
